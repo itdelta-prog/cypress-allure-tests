@@ -1,21 +1,20 @@
 {
   "19a63032f6b1f3eb5475f81169f9de25" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8e3974442966d47a",
-      "status" : "failed",
-      "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `//h2[text()='Learning center']`, but never found it.",
+      "uid" : "a026ff6951fbd07a",
+      "status" : "passed",
       "time" : {
-        "start" : 1666941686606,
-        "stop" : 1666941694304,
-        "duration" : 7698
+        "start" : 1666941937792,
+        "stop" : 1666941941549,
+        "duration" : 3757
       }
     } ]
   },
@@ -29,12 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61569945c4368af4",
+      "uid" : "97d4b123504b8e40",
       "status" : "passed",
       "time" : {
-        "start" : 1666941681614,
-        "stop" : 1666941686544,
-        "duration" : 4930
+        "start" : 1666941934185,
+        "stop" : 1666941937740,
+        "duration" : 3555
       }
     } ]
   }
