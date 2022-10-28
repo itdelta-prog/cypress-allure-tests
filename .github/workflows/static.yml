@@ -20,15 +20,18 @@ jobs:
           
       - name: Run Cypress
         continue-on-error: true
-        run: DEBUG=allure-plugin* npx cypress run --config --env allure=true --browser chrome
+        run: npx cypress run --env allure=true
       
       - name: Generate Allure Report
-        run: npm run allure:report
+        continue-on-error: true
+        run: | 
+          npm run allure:report
+          cat ./allure-report/index.html
         
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           branch: gh-pages
-          folder: allure-report
+          folder: ./allure-report
           
