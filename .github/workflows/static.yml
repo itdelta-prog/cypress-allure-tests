@@ -1,37 +1,35 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 on: [push]
 permissions:
   contents: write
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Install dependencies
+      - name: Create allure-report
         run: |
           npm i -D cypress
           curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
           sudo tar -zxvf allure-2.13.8.tgz -C /opt/
           sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure
           allure --version
-          
-      - name: Run Cypress
-        continue-on-error: true
-        run: npx cypress run --env allure=true
-      
-      - name: Generate Allure Report
-        continue-on-error: true
-        run: | 
+          npx cypress run --env allure=true
           npm run allure:report
-          cat ./allure-report/index.html
-        
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           personal_token: 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
+#           publish_dir: ./allure-report
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           branch: gh-pages
           folder: ./allure-report
-          
