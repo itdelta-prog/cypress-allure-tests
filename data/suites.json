@@ -1,35 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ {
-    "name" : "Login",
-    "children" : [ {
-      "name" : "should show landing page",
-      "uid" : "97d4b123504b8e40",
-      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1666941934185,
-        "stop" : 1666941937740,
-        "duration" : 3555
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "should move to login page and log in",
-      "uid" : "a026ff6951fbd07a",
-      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1666941937792,
-        "stop" : 1666941941549,
-        "duration" : 3757
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "1a85855463aca3ea10b8fe0fcb3372b8"
-  } ],
+  "children" : [ ],
   "name" : "suites"
 }
