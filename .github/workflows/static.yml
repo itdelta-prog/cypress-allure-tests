@@ -22,11 +22,11 @@ jobs:
           allure --version
           npx cypress run --env allure=true
           npm run allure:report
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: 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
-          publish_dir: ./allure-report
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           personal_token: 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
+#           publish_dir: ./allure-report
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
