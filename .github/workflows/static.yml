@@ -22,7 +22,11 @@ jobs:
           allure --version
       - name: Deploy
         continue-on-error: true
-        run: DEBUG=allure-plugin* npx cypress run --config specPattern=cypress/e2e/examples/* --env allure=true --browser chrome
+        run: DEBUG=allure-plugin* npx cypress run --config --env allure=true --browser chrome
+        
+      - name: Clear previous reports
+        continue-on-error: true
+        run: npm run allure:clear
         
       - name: Report
         continue-on-error: true
