@@ -1,12 +1,12 @@
 {
-  "uid" : "ffbc23dfa6d54ae",
+  "uid" : "ba5ff7e06374561e",
   "name" : "should show landing page",
   "fullName" : "should show landing page",
   "historyId" : "cd1524808046ff48904a4213273dd011",
   "time" : {
-    "start" : 1666939506766,
-    "stop" : 1666939511262,
-    "duration" : 4496
+    "start" : 1666939858043,
+    "stop" : 1666939861968,
+    "duration" : 3925
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1666939506768,
-        "stop" : 1666939511154,
-        "duration" : 4386
+        "start" : 1666939858045,
+        "stop" : 1666939861849,
+        "duration" : 3804
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit https://itdelta.learn.company-policy.com/",
         "time" : {
-          "start" : 1666939506808,
-          "stop" : 1666939511149,
-          "duration" : 4341
+          "start" : 1666939858119,
+          "stop" : 1666939861836,
+          "duration" : 3717
         },
         "status" : "passed",
         "steps" : [ ],
@@ -47,9 +47,9 @@
     }, {
       "name" : "assert expected **<span.block.text-white>** to be **visible**",
       "time" : {
-        "start" : 1666939511168,
-        "stop" : 1666939511260,
-        "duration" : 92
+        "start" : 1666939861851,
+        "stop" : 1666939861967,
+        "duration" : 116
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,8 +62,8 @@
     }, {
       "name" : "xpath //span[@class='block text-white']",
       "time" : {
-        "start" : 1666939511260,
-        "stop" : 1666939511260,
+        "start" : 1666939861967,
+        "stop" : 1666939861967,
         "duration" : 0
       },
       "status" : "passed",
@@ -100,6 +100,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ffbc23dfa6d54ae.json",
+  "source" : "ba5ff7e06374561e.json",
   "parameterValues" : [ ]
 }

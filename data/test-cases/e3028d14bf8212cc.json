@@ -1,12 +1,12 @@
 {
-  "uid" : "9a84c56b6999913f",
+  "uid" : "e3028d14bf8212cc",
   "name" : "should move to login page and log in",
   "fullName" : "should move to login page and log in",
   "historyId" : "19a63032f6b1f3eb5475f81169f9de25",
   "time" : {
-    "start" : 1666939511310,
-    "stop" : 1666939515922,
-    "duration" : 4612
+    "start" : 1666939862004,
+    "stop" : 1666939866828,
+    "duration" : 4824
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1666939511328,
-        "stop" : 1666939512121,
-        "duration" : 793
+        "start" : 1666939862004,
+        "stop" : 1666939862996,
+        "duration" : 992
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit https://itdelta.learn.company-policy.com/",
         "time" : {
-          "start" : 1666939511407,
-          "stop" : 1666939512121,
-          "duration" : 714
+          "start" : 1666939862069,
+          "stop" : 1666939862996,
+          "duration" : 927
         },
         "status" : "passed",
         "steps" : [ ],
@@ -47,9 +47,9 @@
     }, {
       "name" : "xpath //a[@class='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900']",
       "time" : {
-        "start" : 1666939512124,
-        "stop" : 1666939512314,
-        "duration" : 190
+        "start" : 1666939863007,
+        "stop" : 1666939863200,
+        "duration" : 193
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1666939512314,
-        "stop" : 1666939512674,
-        "duration" : 360
+        "start" : 1666939863200,
+        "stop" : 1666939863526,
+        "duration" : 326
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,8 +77,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1666939512673,
-        "stop" : 1666939512673,
+        "start" : 1666939863525,
+        "stop" : 1666939863525,
         "duration" : 0
       },
       "status" : "passed",
@@ -92,9 +92,9 @@
     }, {
       "name" : "new url https://itdelta.learn.company-policy.com/login",
       "time" : {
-        "start" : 1666939512675,
-        "stop" : 1666939513154,
-        "duration" : 479
+        "start" : 1666939863527,
+        "stop" : 1666939863976,
+        "duration" : 449
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,8 +107,8 @@
     }, {
       "name" : "xpath //input[@id='email']",
       "time" : {
-        "start" : 1666939513154,
-        "stop" : 1666939513154,
+        "start" : 1666939863976,
+        "stop" : 1666939863976,
         "duration" : 0
       },
       "status" : "passed",
@@ -122,9 +122,9 @@
     }, {
       "name" : "type project2@it-delta.ru",
       "time" : {
-        "start" : 1666939513154,
-        "stop" : 1666939513717,
-        "duration" : 563
+        "start" : 1666939863976,
+        "stop" : 1666939864592,
+        "duration" : 616
       },
       "status" : "passed",
       "steps" : [ ],
@@ -137,9 +137,9 @@
     }, {
       "name" : "xpath //input[@id='password']",
       "time" : {
-        "start" : 1666939513718,
-        "stop" : 1666939513719,
-        "duration" : 1
+        "start" : 1666939864592,
+        "stop" : 1666939864595,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -152,9 +152,9 @@
     }, {
       "name" : "type 159159",
       "time" : {
-        "start" : 1666939513719,
-        "stop" : 1666939513981,
-        "duration" : 262
+        "start" : 1666939864595,
+        "stop" : 1666939864837,
+        "duration" : 242
       },
       "status" : "passed",
       "steps" : [ ],
@@ -167,9 +167,9 @@
     }, {
       "name" : "xpath //button[@type='submit']",
       "time" : {
-        "start" : 1666939513981,
-        "stop" : 1666939513983,
-        "duration" : 2
+        "start" : 1666939864838,
+        "stop" : 1666939864839,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -182,9 +182,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1666939513983,
-        "stop" : 1666939514096,
-        "duration" : 113
+        "start" : 1666939864839,
+        "stop" : 1666939864980,
+        "duration" : 141
       },
       "status" : "passed",
       "steps" : [ ],
@@ -197,8 +197,8 @@
     }, {
       "name" : "form sub --submitting form--",
       "time" : {
-        "start" : 1666939514096,
-        "stop" : 1666939514096,
+        "start" : 1666939864980,
+        "stop" : 1666939864980,
         "duration" : 0
       },
       "status" : "passed",
@@ -212,8 +212,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1666939514096,
-        "stop" : 1666939514096,
+        "start" : 1666939864980,
+        "stop" : 1666939864980,
         "duration" : 0
       },
       "status" : "passed",
@@ -227,9 +227,9 @@
     }, {
       "name" : "new url https://itdelta.learn.company-policy.com/learning/courses",
       "time" : {
-        "start" : 1666939514096,
-        "stop" : 1666939515921,
-        "duration" : 1825
+        "start" : 1666939864980,
+        "stop" : 1666939866828,
+        "duration" : 1848
       },
       "status" : "passed",
       "steps" : [ ],
@@ -242,8 +242,8 @@
     }, {
       "name" : "assert expected **<h2.text-3xl.font-extrabold.tracking-tight.sm:text-4xl>** to be **visible**",
       "time" : {
-        "start" : 1666939515921,
-        "stop" : 1666939515921,
+        "start" : 1666939866828,
+        "stop" : 1666939866828,
         "duration" : 0
       },
       "status" : "passed",
@@ -257,8 +257,8 @@
     }, {
       "name" : "xpath //h2[text()='Learning center']",
       "time" : {
-        "start" : 1666939515921,
-        "stop" : 1666939515921,
+        "start" : 1666939866828,
+        "stop" : 1666939866828,
         "duration" : 0
       },
       "status" : "passed",
@@ -295,6 +295,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9a84c56b6999913f.json",
+  "source" : "e3028d14bf8212cc.json",
   "parameterValues" : [ ]
 }

@@ -2,26 +2,26 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
     "name" : "should show landing page",
-    "uid" : "ffbc23dfa6d54ae",
+    "uid" : "ba5ff7e06374561e",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1666939506766,
-      "stop" : 1666939511262,
-      "duration" : 4496
+      "start" : 1666939858043,
+      "stop" : 1666939861968,
+      "duration" : 3925
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "should move to login page and log in",
-    "uid" : "9a84c56b6999913f",
+    "uid" : "e3028d14bf8212cc",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1666939511310,
-      "stop" : 1666939515922,
-      "duration" : 4612
+      "start" : 1666939862004,
+      "stop" : 1666939866828,
+      "duration" : 4824
     },
     "flaky" : false,
     "newFailed" : false,

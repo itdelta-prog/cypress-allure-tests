@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Oct 28 06:45:11 UTC 2022","Fri Oct 28 06:45:15 UTC 2022","4612","","Login","","","","should move to login page and log in",""
-"passed","Fri Oct 28 06:45:06 UTC 2022","Fri Oct 28 06:45:11 UTC 2022","4496","","Login","","","","should show landing page",""
+"passed","Fri Oct 28 06:51:02 UTC 2022","Fri Oct 28 06:51:06 UTC 2022","4824","","Login","","","","should move to login page and log in",""
+"passed","Fri Oct 28 06:50:58 UTC 2022","Fri Oct 28 06:51:01 UTC 2022","3925","","Login","","","","should show landing page",""
