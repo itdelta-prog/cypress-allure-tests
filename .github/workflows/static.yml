@@ -9,25 +9,38 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create allure-report
-        continue-on-error: true
+        
+      - name: Install dependencies
         run: |
           npm i -D cypress
           curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
           sudo tar -zxvf allure-2.13.8.tgz -C /opt/
           sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure
           allure --version
-          npx cypress run --env allure=true
-          npm run allure:report
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           personal_token: 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
-#           publish_dir: ./allure-report
+          
+      - name: Run Cypress
+        continue-on-error: true
+        run: DEBUG=allure-plugin* npx cypress run --config --env allure=true --browser chrome
+      
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+            ref: allure
+            path: allure
+            
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+            allure_results: allure-results
+            gh_pages: allure
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           branch: gh-pages
-          folder: allure-report
+          folder: allure-history
           
