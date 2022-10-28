@@ -37,6 +37,12 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Create allure-report
+        run: 
+          npm run allure:report
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        with:
+          folder:
+            allure-reports
