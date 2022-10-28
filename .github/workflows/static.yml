@@ -1,14 +1,10 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 on: [push]
 permissions:
   contents: write
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,5 +28,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           branch: gh-pages
-          folder: ./allure-report
+          folder: allure-report
           
