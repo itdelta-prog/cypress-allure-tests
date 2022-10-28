@@ -26,7 +26,7 @@ jobs:
         
       - name: Clear previous reports
         continue-on-error: true
-        run: npm run allure:clear
+        run: rm -r ./allure-results/ ./allure-report ./cypress/screenshots || true
         
       - name: Report
         continue-on-error: true
