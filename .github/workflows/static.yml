@@ -1,8 +1,5 @@
 name: allure-report
-'on':
-    push:
-        branches:
-            - master
+on: ["push"]
 jobs:
     generate-report:
         runs-on: ubuntu-latest
