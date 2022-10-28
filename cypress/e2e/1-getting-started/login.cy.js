@@ -1,6 +1,6 @@
 describe('Login', () => {
     const email = 'project2@it-delta.ru';
-    const password = '15915';
+    const password = '159159';
 
     beforeEach(() => {
         cy.visit('https://itdelta.learn.company-policy.com/');
