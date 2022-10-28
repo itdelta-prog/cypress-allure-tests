@@ -1,5 +1,31 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "should show landing page",
+    "uid" : "61569945c4368af4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1666941681614,
+      "stop" : 1666941686544,
+      "duration" : 4930
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should move to login page and log in",
+    "uid" : "8e3974442966d47a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1666941686606,
+      "stop" : 1666941694304,
+      "duration" : 7698
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
 }

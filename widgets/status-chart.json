@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "uid" : "61569945c4368af4",
+  "name" : "should show landing page",
+  "time" : {
+    "start" : 1666941681614,
+    "stop" : 1666941686544,
+    "duration" : 4930
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e3974442966d47a",
+  "name" : "should move to login page and log in",
+  "time" : {
+    "start" : 1666941686606,
+    "stop" : 1666941694304,
+    "duration" : 7698
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
