@@ -22,25 +22,13 @@ jobs:
         continue-on-error: true
         run: DEBUG=allure-plugin* npx cypress run --config --env allure=true --browser chrome
       
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-            ref: allure
-            path: allure
-            
       - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        with:
-            allure_results: allure-results
-            gh_pages: allure
+        run: npm run allure:report
         
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           branch: gh-pages
-          folder: allure-history
+          folder: allure-report
           
