@@ -20,13 +20,14 @@ jobs:
           sudo tar -zxvf allure-2.13.8.tgz -C /opt/
           sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure
           allure --version
-          npx cypress run --env allure=true
-          npm run allure:report
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           personal_token: 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
-#           publish_dir: ./allure-report
+      - name: Deploy
+        continue-on-error: true
+        run: DEBUG=allure-plugin* npx cypress run --config specPattern=cypress/e2e/examples/* --env allure=true --browser chrome
+        
+      - name: Report
+        continue-on-error: true
+        run: npm run allure:report
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.2.0
