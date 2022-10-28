@@ -10,6 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Create allure-report
+        continue-on-error: true
         run: |
           npm i -D cypress
           curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
