@@ -1,1 +1,0 @@
-[{"uid":"df30c267df95337","name":"should show landing page","time":{"start":1667148406875,"stop":1667148409825,"duration":2950},"status":"passed","severity":"normal"},{"uid":"b5b8bd0d2f74f2bf","name":"should move to login page and log in","time":{"start":1667148409841,"stop":1667148416239,"duration":6398},"status":"failed","severity":"normal"}]
