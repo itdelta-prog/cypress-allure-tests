@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Oct 31 11:53:00 GMT 2022","Mon Oct 31 11:53:07 GMT 2022","6412","","Login","","","","should move to login page and log in",""
+"passed","Mon Oct 31 11:52:57 GMT 2022","Mon Oct 31 11:53:00 GMT 2022","3379","","Login","","","","should show landing page",""
